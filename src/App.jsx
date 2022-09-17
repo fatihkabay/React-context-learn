@@ -1,16 +1,12 @@
 import './App.css';
-import React, { UserContext } from 'react';
+import React from 'react';
 
-export default function App() {
+function App() {
   return (
-    <UserContext.Provider value="Hello World">
-      <User />
-      </UserContext.Provider>
+    <div className="container">
+      <h1>Hello World</h1>
+    </div>
   );
 }
 
-function User() {
-  const value = React.useContext(UserContext);
-
-  return <h1>{value}</h1>
-}
+export default App;
