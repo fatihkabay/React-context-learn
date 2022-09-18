@@ -1,7 +1,7 @@
-function Header() {
+function Header({title}) {
     return (
         <div>
-            Header Component
+            <h1>{title}</h1>
         </div>
     )
 }

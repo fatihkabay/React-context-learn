@@ -1,7 +1,12 @@
-function Footer() {
+function Footer({title, setTitle}) {
+
+    const switchTitle = () => {
+        setTitle(title === 'Header Component' ? 'Footer Component' : 'Header Component')
+    }
+
     return (
         <div>
-            Footer Component
+            <button onClick={switchTitle}>Switch Title</button>
         </div>
     )
 }

@@ -6,12 +6,12 @@ import {useState} from 'react';
 
 function App() {
   
-  const [title, setTitle] = useState("Use of context");
-  
+  const [title, setTitle] = useState('Header component');
+
   return (
     <div className="container">
-      <Header />
-      <Footer />
+      <Header title={title}/>
+      <Footer title={title} setTitle={setTitle}/>
     </div>
   );
 }
